@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  height: 100vh;
+  width: 100vw;
+  /*background-color: hsla(55, 100%, 46%, 0.4);*/
+  font-size: 1rem;
+}
+
+/* === HELPER COLOURS === */
+/*.content {
+  background-color: hsla(83, 100%, 46%, 0.4);
+}
+
+.name-headline, .about, .links {
+  background-color: hsla(265, 100%, 22%, 0.4);
+}
+*/
+/* === MUTUAL PROPERTIES === */
+.name-headline, .work-education, .links {
+  text-align: center;
+}
+
+.about, .work-education, .links {
+  margin-bottom: 1.8rem;
+}
+
+.about, .work-education {
+  line-height: 1.7rem;
+}
+
+/* === MAIN-HEADLINE STYLES === */
+.main-headline {
+  position: relative;
+  background-image: url('images/Viki-01.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35%;
+  width: 100%;
+}
+
+/* === Name-headline properties === */
+.name-headline {
+  position: absolute;
+  bottom: .5rem;
+  left: 0;
+  right: 0;
+  font-family: 'Sintony', Arial, sans-serif;
+  font-weight: 900;
+  color: hsla(0, 0%, 100%, 0.8);
+  line-height: 1.2rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+.name-headline h2 {
+  font-size: .8rem;
+  padding: .6rem 1rem;
+  letter-spacing: .1rem;
+}
+
+@media (min-width: 768px) {
+  .main-headline {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    background-position: 70% 50%;
+  }
+  .name-headline {
+    position: absolute;
+    top: 12%;
+    right: 0;
+    left: 0;
+  }
+  .name-headline h1 {
+    font-size: 30px;
+  }
+  .name-headline h2 {
+    font-size: 15px;
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+	.main-headline {
+		width: 66.66%;
+	}
+}
+
+@media (min-width: 1300px) {
+  .name-headline h1 {
+    font-size: 40px;
+  }
+  .name-headline h2 {
+    font-size: 20px;
+  }
+}
+
+/* === CONTENT STYLES === */
+.content {
+  height: 65%;
+  width: 90%;
+  margin: 0 auto;
+  /*max-width: calc(100vw - 20px);*/
+  font-family: 'Poppins', garamond;
+  color: hsla(0, 0%, 0%, 0.6);
+  padding: 1.2rem;
+}
+
+@media (min-width: 768px) {
+
+	.content {
+    position: absolute;
+    left: 0;
+    height: 100%;
+		width: 40%;
+    padding: 0 2.7rem;
+  	}
+  .button {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+	.content {
+		width: 33.33%;
+    padding: 0 4rem;
+	}
+}
+
+@media (min-width: 1300px) {
+  .content{
+    padding: 0 6rem;
+  }
+}
+
+
+/* === Button properties === */
+.button {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  padding: 1rem 1.3rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: hsla(0, 0%, 100%, 0.8);
+  background-color: hsla(140, 100%, 35%, 0.6);
+}
+
+.button:link, .button:visited {
+  color: hsla(0, 0%, 100%, 0.9);
+}
+
+.button:hover {
+  transform: scale(1.02);
+  transition: all 0.5s ease-in-out;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  color: hsla(140, 100%, 35%, 0.6);
+  border: 1px solid hsla(140, 100%, 35%, 0.6);
+}
+
+/* === Work-education styles === */
+.work-education {
+  font-weight: 100;
+  border-top: 1px solid hsla(0, 0%, 0%, 0.6);
+}
+
+.blue {
+  margin-top: 1.1rem;
+  margin-bottom: .4rem;
+  color: hsla(205, 62%, 72%, 0.7);
+}
+
+.underline {
+  border-bottom: 1px dashed hsla(0, 0%, 0%, 0.6);
+}
+
+.smaller {
+  font-size: .88rem;
+}
+
+/* === Social-icon's styles === */
+.social-icon {
+  color: hsla(205, 62%, 72%, 1);
+  padding: 3rem 1rem 2rem;
+}
+
+.in-line {
+  display: inline;
+}
+
+i:hover {
+  transform: scale(1.2);
+}
